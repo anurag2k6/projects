@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Event</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Edit Event</h1>
+  </header>
+  <nav id="dynamicNav">
+    <a href="admin-dashboard.html" class="back-btn">← Back to Dashboard</a>
+  </nav>
+  <main>
+    <form id="editEventForm">
+      <label>Event Name:</label>
+      <input type="text" id="name" required />
+      <label>Date:</label>
+      <input type="date" id="date" required />
+      <label>Time:</label>
+      <input type="time" id="time" required />
+      <label>Location:</label>
+      <input type="text" id="location" required />
+      <label>Status:</label>
+      <select id="status" required>
+        <option value="Upcoming">Upcoming</option>
+        <option value="Ongoing">Ongoing</option>
+        <option value="Completed">Completed</option>
+      </select>
+      <label>Seat Limit:</label>
+      <input type="number" id="seats" value="100" min="1" required />
+      <label>Image URL:</label>
+      <input type="url" id="image" placeholder="https://..." />
+      <label>Event Type:</label>
+      <select id="eventType" required>
+        <option value="Single">Single</option>
+        <option value="Team">Team</option>
+        <option value="Both">Both</option>
+      </select>
+      <label>Team Size (if Team/Both):</label>
+      <input type="number" id="teamSize" value="1" min="1" />
+      <label>Rules & Instructions:</label>
+      <textarea id="rules" rows="4" placeholder="Enter rules and instructions for the event..."></textarea>
+      <button type="submit">Update Event</button>
+    </form>
+    <p id="message"></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

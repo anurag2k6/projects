@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register for Event</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Event Registration</h1>
+  </header>
+  <nav id="dynamicNav">
+    <a href="events.html" class="back-btn">← Back to Events</a>
+  </nav>
+  <main>
+    <form id="eventRegForm">
+      <label>Name:</label>
+      <input type="text" id="name" required />
+      <label>Email:</label>
+      <input type="email" id="email" required />
+      <label>College:</label>
+      <input type="text" id="college" required />
+      <label>Branch:</label>
+      <input type="text" id="branch" required />
+      <div id="teamFields" style="display: none;">
+        <label>Team Name:</label>
+        <input type="text" id="teamName" />
+        <label>Team Members (one per line):</label>
+        <textarea id="teamMembers" rows="3" placeholder="Enter team member names, one per line"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="message"></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

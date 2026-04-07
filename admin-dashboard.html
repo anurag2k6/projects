@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+  </header>
+  <nav id="dynamicNav">
+    <a href="index.html">Home</a>
+    <a href="admin-login.html">Admin Login</a>
+  </nav>
+  <main>
+    <div class="admin-cards">
+      <div class="card"><h3>Total Events</h3><p id="totalEvents">0</p></div>
+      <div class="card"><h3>Total Users</h3><p id="totalUsers">0</p></div>
+      <div class="card"><h3>Total Registrations</h3><p id="totalRegistrations">0</p></div>
+    </div>
+    <section>
+      <h3>Manage Events</h3>
+      <a class="button" href="add-event.html">Add Event</a>
+      <button id="autoCompleteBtn" class="button">Auto-Complete Past Events</button>
+      <div id="adminEventsContainer"></div>
+    </section>
+    <section>
+      <h3>Registrations</h3>
+      <a class="button" href="view-registrations.html">View All Registrations</a>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
